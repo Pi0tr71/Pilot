@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+             android:TabbedPage.ToolbarPlacement="Bottom"
+             x:Class="Pilot.TabbedPage1"
+             android:TabbedPage.BarSelectedItemColor="white"
+             android:TabbedPage.BarItemColor="white"
+             android:TabbedPage.BarBackgroundColor="#F5B319">
+    <!--Pages can be added as references or inline-->
+    <ContentPage BackgroundImageSource="bg6.png" Title="Zegar" IconImageSource="clock.png">
+        <StackLayout HorizontalOptions="CenterAndExpand">
+            <Grid
+                HorizontalOptions="CenterAndExpand"
+                ColumnSpacing="40"
+                RowSpacing="40"
+                Margin="0,260,0,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="90"/>
+                    <RowDefinition Height="90"/>
+                    <RowDefinition Height="90"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="90"/>
+                    <ColumnDefinition Width="90"/>
+                </Grid.ColumnDefinitions>
+                <ImageButton Source="button.png"
+                        Padding="5"
+                        Grid.Row="0"
+                         Grid.Column="0"
+                         BackgroundColor="Transparent"
+                         CornerRadius="20"
+                         BorderColor="White"
+                         BorderWidth="2"
+                         x:Name="button1"
+                         Clicked="button1_Clicked"/>
+                <ImageButton Source="on.png"
+                         HeightRequest="25"
+                         Padding="5"
+                         Grid.Row="0"
+                         Grid.Column="1"
+                         BackgroundColor="Transparent"
+                         CornerRadius="20"
+                         BorderColor="White"
+                         BorderWidth="2"
+                             x:Name="button2"
+                         Clicked="button2_Clicked"/>
+
+                <ImageButton Source="breathing.png"
+                         HeightRequest="25"
+                         Padding="5"
+                         Grid.Row="1"
+                         Grid.Column="0"
+                         BackgroundColor="Transparent"
+                         CornerRadius="20"
+                         BorderColor="White"
+                         BorderWidth="2"
+                             x:Name="button3"
+                         Clicked="button3_Clicked"/>
+                <ImageButton Source="random.png"
+                         HeightRequest="25"
+                         Padding="5"
+                         Grid.Row="1"
+                         Grid.Column="1"
+                         BackgroundColor="Transparent"
+                         CornerRadius="20"
+                         BorderColor="White"
+                         BorderWidth="2"
+                             x:Name="button4"
+                         Clicked="button4_Clicked"/>
+                <ImageButton Source="fire.png"
+                         HeightRequest="25"
+                         Padding="5"
+                         Grid.Row="2"
+                         Grid.Column="0"
+                         BackgroundColor="Transparent"
+                         CornerRadius="20"
+                         BorderColor="White"
+                         BorderWidth="2"
+                             x:Name="button5"
+                         Clicked="button5_Clicked"/>
+                <ImageButton Source="moon.png"
+                         HeightRequest="25"
+                         Padding="5"
+                         Grid.Row="2"
+                         Grid.Column="1"
+                         BackgroundColor="Transparent"
+                         CornerRadius="20"
+                         BorderColor="White"
+                         BorderWidth="2"
+                             x:Name="button6"
+                         Clicked="button6_Clicked"/>
+            </Grid>
+            <Grid HorizontalOptions="CenterAndExpand" RowSpacing="20">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60"/>
+                    <RowDefinition Height="40"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="30"/>
+                    <ColumnDefinition Width="90"/>
+                    <ColumnDefinition Width="30"/>
+                    <ColumnDefinition Width="90"/>
+                </Grid.ColumnDefinitions>
+                <Label 
+                    Text="Od"
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    VerticalOptions="End"
+                    FontSize="Medium"/>
+                <TimePicker
+                    x:Name="start"
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    VerticalOptions="End"/>
+                <Label 
+                    Text="Do"
+                    Grid.Row="0"
+                    Grid.Column="2"
+                    VerticalOptions="End"
+                    FontSize="Medium"/>
+                <TimePicker 
+                    x:Name="stop"
+                    Grid.Row="0"
+                    Grid.Column="3"
+                    VerticalOptions="End"/>
+                <Button 
+                    Text="Ok"
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="4"
+                    BackgroundColor="Transparent"
+                    CornerRadius="20"
+                    BorderColor="White"
+                    BorderWidth="2"
+                    x:Name="button7"
+                    Clicked="button7_Clicked"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage>
+    <ContentPage BackgroundImageSource="bg7.png" Title="Tryby" IconImageSource="onoff.png">
+        <Grid
+            HorizontalOptions="CenterAndExpand"
+            ColumnSpacing="40"
+            RowSpacing="40"
+            Margin="30,260,30,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="120"/>
+                <RowDefinition Height="120"/>
+                <RowDefinition Height="120"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="120"/>
+                <ColumnDefinition Width="120"/>
+            </Grid.ColumnDefinitions>
+            <ImageButton Source="button.png"
+                         Padding="5"
+                         Grid.Row="0"
+                         Grid.Column="0"
+                         BackgroundColor="Transparent"
+                         CornerRadius="20"
+                         BorderColor="White"
+                         BorderWidth="2"
+                         x:Name="button8"
+                    Clicked="button8_Clicked"/>
+            <ImageButton Source="on.png"
+                         HeightRequest="25"
+                         Padding="5"
+                         Grid.Row="0"
+                         Grid.Column="1"
+                         BackgroundColor="Transparent"
+                         CornerRadius="20"
+                         BorderColor="White"
+                         BorderWidth="2"
+                         x:Name="button9"
+                    Clicked="button9_Clicked"/>
+            <ImageButton Source="breathing.png"
+                         HeightRequest="25"
+                         Padding="5"
+                         Grid.Row="1"
+                         Grid.Column="0"
+                         BackgroundColor="Transparent"
+                         CornerRadius="20"
+                         BorderColor="White"
+                         BorderWidth="2"
+                         x:Name="button10"
+                    Clicked="button10_Clicked"/>
+            <ImageButton Source="random.png"
+                         HeightRequest="25"
+                         Padding="5"
+                         Grid.Row="1"
+                         Grid.Column="1"
+                         BackgroundColor="Transparent"
+                         CornerRadius="20"
+                         BorderColor="White"
+                         BorderWidth="2"
+                         x:Name="button11"
+                    Clicked="button11_Clicked"/>
+            <ImageButton Source="fire.png"
+                         HeightRequest="25"
+                         Padding="5"
+                         Grid.Row="2"
+                         Grid.Column="0"
+                         BackgroundColor="Transparent"
+                         CornerRadius="20"
+                         BorderColor="White"
+                         BorderWidth="2"
+                         x:Name="button12"
+                    Clicked="button12_Clicked"/>
+            <ImageButton Source="moon.png"
+                         HeightRequest="25"
+                         Padding="5"
+                         Grid.Row="2"
+                         Grid.Column="1"
+                         BackgroundColor="Transparent"
+                         CornerRadius="20"
+                         BorderColor="White"
+                         BorderWidth="2"
+                         x:Name="button13"
+                    Clicked="button13_Clicked"/>
+        </Grid>
+    </ContentPage>
+</TabbedPage>
